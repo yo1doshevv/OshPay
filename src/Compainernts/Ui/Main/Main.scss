@@ -1,0 +1,116 @@
+/* Main.scss */
+.slick-carousel-container {
+    width: 100%;
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 1px 0;
+    margin-top: 200px;
+    border-radius: 20px;
+  }
+  
+  .slick-slide {
+    display: flex !important;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  .box{
+    display: flex;
+    border-radius: 20px;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: all 0.3s ease;
+  
+    // &:hover {
+    //   transform: scale(1.05);
+    //   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    // }
+  
+    /* Chap tomondagi kontent */
+    .menu_left {
+      width: 55%;
+      color: #333;
+      margin-top: 120px;
+      border-radius: 20px;
+  
+      h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #d17e3c; /* PayOsh uchun o'ziga xos rang */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #ffffff;
+      }
+  
+      button {
+        background-color: #d17e3c;
+        color: #fff;
+        border: none;
+        padding: 12px 25px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        border-radius: 6px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+  
+        &:hover {
+          background-color: #c16e2e;
+          transform: translateY(-3px);
+        }
+      }
+    }
+
+    a{
+      background-color: #d17e3c;
+        color: #fff;
+        border: none;
+        padding: 12px 25px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        border-radius: 6px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        text-decoration: none;
+
+        &:hover {
+          background-color: #c16e2e;
+          transform: translateY(-3px);
+        }
+    }
+  
+    /* O'ng tomondagi rasm */
+    .menu_right {
+      width: 40%;
+      img {
+        width: 100%;
+        height: 500px;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+        transition: transform 0.3s ease;
+  
+        // &:hover {
+        //   transform: scale(1.05);
+        // }
+      }
+    }
+  }
+  
+  .slick-prev, .slick-next {
+  display: none;
+  }
+
+  

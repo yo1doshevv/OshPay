@@ -1,0 +1,109 @@
+$form-bg-color: #ffffff;
+$form-border-color: #e0e0e0;
+$form-shadow: 0 0 25px rgba(5, 5, 5, 0.1);
+$primary-color: #6c63ff;
+$secondary-color: #8a85ff;
+$error-color: #ff4d4f;
+
+.form-container {
+  max-width: 1170px;
+  margin: 100px auto;
+  margin-top: 30vh;
+  padding: 25px 30px;
+  // background-color: rgb(102, 41, 0);
+  border-radius: 12px;
+  box-shadow:  0 0 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7OjiXcNon8_DIq2Cnje4p6P_uNzI4IOhwGg&s");
+
+  .aloqa_left img{
+    width: 450px;
+    height: 300px;
+    margin-left: 55%;
+    margin-top: -50%;
+   border-radius: 20px;
+  }
+
+  .maps iframe{
+    margin-left: -30px;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: rgb(251, 248, 248);
+    font-weight: bold;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .form-group {
+    margin-bottom: 18px;
+    text-align: left;
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 50%;
+      padding: 12px 15px;
+      font-size: 1rem;
+      color: #333;
+      border: 1px solid $form-border-color;
+      border-radius: 8px;
+      background: #f7f7f7;
+      transition: all 0.3s ease;
+
+      &:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+        background: #fff;
+        outline: none;
+      }
+
+      &::placeholder {
+        color: #aaa;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .submit-btn {
+    width: 53%;
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgb(251, 159, 79);
+    transition: all 0.3s ease;
+    margin-left: -550px;
+
+    &:hover {
+      background-color: white;
+      color: rgb(251, 159, 79);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(108, 99, 255, 0.4);
+    }
+
+    &:active {
+      transform: translateY(1px);
+      box-shadow: 0 4px 10px rgba(108, 99, 255, 0.2);
+    }
+  }
+
+  .error-message {
+    color: $error-color;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+}
